@@ -1,1 +1,1 @@
-# Matheletics
+# Mathletics
