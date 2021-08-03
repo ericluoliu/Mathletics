@@ -1,17 +1,18 @@
+
 .headerclass {
 	color: cadetblue;
 	font-size: 60px;
 }
 .logo {
-	margin-left:45%;
+	margin-left:48%;
 	margin-right:auto;
-	width: 10%;
+	width: 8%;
 	}
 #font{
 	font-family: 'Trebuchet MS', sans-serif
 }
-body {
-  background-image: ;
+.bgcolor {
+  background-color: #1B35A5 ;
 }
 ul {
   list-style-type: none;
@@ -29,15 +30,16 @@ li a {
   display: block;
   color: black;
   text-align: center;
+  border-radius: 10px;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  color: #3399ff;
+  color: #1B35A5;
 }
 .active {
-  color: #3399ff;
+  color: #1B35A5;
 }
 
 button {
@@ -45,43 +47,35 @@ button {
 	 display:inline-block;
 }
 .otherbuttons {
-  border: 2px solid #3399ff;
+  border: 2px solid #1B35A5;
   color: Black;
   padding: 10px 14px;
   text-align: center;
   font-size: 16px;
-  border-radius: 18px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .loginbutton {
-  border: 2px solid black;
+  border: 2px solid #1B35A5;
   color: Black;
   padding: 10px 14px;
   text-align: center;
   font-size: 16px;
-  border-radius: 18px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .otherbuttons:hover {
-  background-color: #3399ff;
+  background-color: #1B35A5;
   color: white;
 }
 .loginbutton:hover {
-  background-color: #3399ff;
+  background-color: #1B35A5;
   color: white;
 }
 .active, .btn:hover {
-  background-color: #666;
+  background-color: #1B35A5;
   color: white;
 }
 
-body {
-	background-image: url(https://www.themathletics.com/s/img/background.jpg?1602168257);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 0px 200px;
-    background-size: cover;
-    background-image-opacity: 50%;
-}

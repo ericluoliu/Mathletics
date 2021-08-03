@@ -11,7 +11,7 @@
         <title>Website</title>
     </head>
     <body>
-        <img class = "logo" src="Mathleticslogo.jpg" alt="Mathletics Logo">
+        <img class = "logo" src="Mathleticslogo.png">
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
