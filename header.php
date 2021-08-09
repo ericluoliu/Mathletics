@@ -30,7 +30,7 @@
                     }
                 ?>
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Course Catalog</a>
+                    <a class="nav-link active" href="index.php">Course Catalog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="templates/contactform.html">Contact Us</a>
