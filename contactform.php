@@ -10,7 +10,7 @@
     <div id="fcf-form">
     <h3 class="fcf-h3">Contact Us</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="../templates/contact-form-process.php">
         
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Name: </label>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="fcf-form-group">
-            <img src="captcha_code_file.php?rand=<?php echo rand(); ?>" id="captchaimg" >
+            <img src="../templates/captcha_code_file.php?rand=<?php echo rand(); ?>" id="captchaimg" >
             <label for="message">Captcha (spam protection code) </label>
             <input id="6_letters_code" name="6_letters_code" type="text">
         </div>
