@@ -12,7 +12,12 @@ if (isset($_POST["submit"])){
         header("location: ../login.php?error=emptyinput");
         exit();
     }
-    loginUser($conn, $username, $pwd);
+    if (wrongLogin($conn, $username, $pwd) === true){
+        header("location: ../login.php?error=wronglogin");
+        exit();
+    }
+    $uidExists = wrongLogin($conn, $username, $pwd);
+    loginUser($uidExists);
 }
 
 else{
