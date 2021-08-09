@@ -33,7 +33,7 @@
                     <a class="nav-link active" href="index.php">Course Catalog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="templates/contactform.php">Contact Us</a>
+                    <a class="nav-link" href="contactform.php">Contact Us</a>
                 </li>
             </ul>
             </nav>
