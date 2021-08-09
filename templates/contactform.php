@@ -1,20 +1,6 @@
-<head>
-	<div>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <img class = "logo" src="../static/Mathleticslogo.png" alt="Mathletics Logo">
-        <br><br>
-            <ul id="font">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Course Catalog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="contactform.html">Contact Us</a>
-                </li>
-            </ul>
-    </div>
-</head>
+<?php
+    include_once 'header.php';
+?>
 <br><br>
 <body>
 	<link href="../static/contact-form.css" rel="stylesheet">
