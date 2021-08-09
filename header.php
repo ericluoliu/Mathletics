@@ -12,7 +12,7 @@
             <link rel="stylesheet" href="bootstrap.min.css">
             <link rel="stylesheet" href="static/mystyle.css"> 
         
-            <img class = "logo" src="static/Mathleticslogo.png" alt="Mathletics Logo">
+            <a href='index.php'><img class = "logo" src="static/Mathleticslogo.png" alt="Mathletics Logo"></a>
             <title> Mathletics </title>
             <br>
             <br>
