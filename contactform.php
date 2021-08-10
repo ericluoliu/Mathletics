@@ -3,8 +3,8 @@
 ?>
 <br><br>
 <body>
-	<link href="../static/contact-form.css" rel="stylesheet">
-    <link href="../static/mystyle.css" rel="stylesheet">
+	<link href="/static/contact-form.css" rel="stylesheet">
+    <link href="/static/mystyle.css" rel="stylesheet">
 <div class="fcf-body">
 
     <div id="fcf-form">
