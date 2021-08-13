@@ -19,7 +19,7 @@ include_once 'header.php';
             <h3>Taught by Professor Eric Liu</h3>
             <h5>September 21, 2021 - December 4, 2021</h5>
             <p>Class covers all Algebra 1 topics. Eric Liu graduated in 2016 from Bellevue College with a degree in teaching and maths.</p>
-            <div class="paybox" style="height:70px">Cost: $1000.00
+            <div class="paybox">Cost: $1000.00
                 <br>
                 <br>
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -36,7 +36,7 @@ include_once 'header.php';
             <h3>Taught by Professor Eric Liu</h3>
             <h5>September 21, 2021 - December 4, 2021</h5>
             <p>Class covers all SAT topics. Eric Liu graduated in 2016 from Bellevue College with a degree in teaching and maths.</p>
-            <div class="paybox" style="height:70px">Cost: $1.00
+            <div class="paybox">Cost: $1.00
                 <br>
                 <br>
                 <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -52,7 +52,7 @@ include_once 'header.php';
     <div class="rightcolumn">
         <div class="card">
             <h2>About Our Courses</h2>
-            <div class="fakeimg" style="height:85px;">Our courses are professionally developed. Class content is built by highly qualified instructors to ensure a comprehensive learning experience for all students.</div>
+            <div class="fakeimg">Our courses are professionally developed. Class content is built by highly qualified instructors to ensure a comprehensive learning experience for all students.</div>
         </div>
         <div class="card">
             <h3>Our Instructors</h3>
