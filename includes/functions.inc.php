@@ -32,6 +32,24 @@ function invalidEmail($email){
     }
     return $result;
 }
+function invalidAccountType($accounttype){
+    $result;
+    if ($accounttype == "STUDENT"){
+        $result = false;
+        return $result;
+        exit();
+    }
+    else if ($accounttype == "TEACHER"){
+        $result = false;
+        return $result;
+        exit();
+    }
+    else{
+        $result = true;
+        return $result;
+        exit();
+    }
+}
 
 function pwdMatch($pwd, $pwdRepeat){
     $result;
@@ -67,8 +85,8 @@ function uidExists($conn, $username, $email){
     mysqli_stmt_close($stmt);
 }
 
-function createUser($conn, $name, $username, $email, $pwd){
-    $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
+function createUser($conn, $name, $username, $email, $pwd, $accounttype){
+    $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd, usersAccountType) VALUES (?, ?, ?, ?, ?);";
     $stmt = mysqli_stmt_init($conn);
     if(!mysqli_stmt_prepare($stmt, $sql)){
         header("location: ../signup.php?error=stmtfailed");
@@ -77,7 +95,7 @@ function createUser($conn, $name, $username, $email, $pwd){
 
     $hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 
-    mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashedPwd);
+    mysqli_stmt_bind_param($stmt, "sssss", $name, $email, $username, $hashedPwd, $accounttype);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
     header("location: ../signup.php?error=none");
@@ -115,6 +133,7 @@ function loginUser($uidExists){
     session_start();
     $_SESSION["userid"] = $uidExists["usersId"];
     $_SESSION["useruid"] = $uidExists["usersUid"];
+    $_SESSION["userAccountType"] = $uidExists["usersAccountType"];
     header("location: ../index.php?error=none");
     exit();
 }
