@@ -9,7 +9,7 @@ session_start();
 <div class="header">
     <a href='index.php'><img class="logo" src="static/Mathleticslogo.png" alt="Mathletics Logo"></a>
     <h1>Mathletics</h1>
-    <p>Very Legit Catchphrase</p>
+    <p>Course Catalog and Registration</p>
 </div>
 <div class="topnav">
     <?php
@@ -28,8 +28,8 @@ session_start();
     <a href="index.php" style="float:left">Home</a>
     <a href="contactform.php" style="float:left">Contact Us</a>
     <a href="index.php" style="float:left">Course Catalog</a>
-    <a href="<?php echo $param; ?>" style="float:right"><?php echo $param1; ?></a>
     <a href="<?php echo $param2; ?>" style="float:right"><?php echo $param3; ?></a>
+    <a href="<?php echo $param; ?>" style="float:right"><?php echo $param1; ?></a>
 
     <!-- OLD ONE, GRACE's VERS.
     <nav>
