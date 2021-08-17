@@ -26,10 +26,10 @@ session_start();
     }
     ?>
     <a href="index.php" style="float:left">Home</a>
-    <a href="<?php echo $param; ?>" style="float:left"><?php echo $param1; ?></a>
-    <a href="<?php echo $param2; ?>" style="float:left"><?php echo $param3; ?></a>
-    <a href="index.php" style="float:left">Course Catalog</a>
     <a href="contactform.php" style="float:left">Contact Us</a>
+    <a href="index.php" style="float:left">Course Catalog</a>
+    <a href="<?php echo $param; ?>" style="float:right"><?php echo $param1; ?></a>
+    <a href="<?php echo $param2; ?>" style="float:right"><?php echo $param3; ?></a>
 
     <!-- OLD ONE, GRACE's VERS.
     <nav>
