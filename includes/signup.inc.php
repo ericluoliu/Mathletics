@@ -6,6 +6,8 @@ if(isset($_POST["submit"])){
     $username = $_POST["uid"];
     $pwd = $_POST["pwd"];
     $pwdRepeat = $_POST["pwdrepeat"];
+    $accounttype = strtoupper($_POST["accounttype"]);
+
 
     require_once 'dbh.inc.php';
     require_once 'functions.inc.php';
@@ -22,6 +24,10 @@ if(isset($_POST["submit"])){
         header("location: ../signup.php?error=invalidemail");
         exit();
     }
+    if(invalidAccountType($accounttype) !== false){
+        header("location: ../signup.php?error=invalidaccounttype");
+        exit();
+    }
     if(pwdMatch($pwd, $pwdRepeat) !== false){
         header("location: ../signup.php?error=passwordsdontmatch");
         exit();
@@ -31,7 +37,7 @@ if(isset($_POST["submit"])){
         exit();
     }
 
-    createUser($conn, $name, $email, $username, $pwd);
+    createUser($conn, $name, $email, $username, $pwd, $accounttype);
 }
 else{
     header("location: ../signup.php");

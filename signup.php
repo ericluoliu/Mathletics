@@ -9,6 +9,7 @@
         <input type="text" name="uid" placeholder="Username">
         <input type="password" name="pwd" placeholder="Password">
         <input type="password" name="pwdrepeat" placeholder="Repeat Password">
+        <input type="text" name="accounttype" placeholder="Student or Teacher Account">
         <button type="submit" name="submit">Sign Up</button>
     </form>
     <?php 
@@ -21,6 +22,9 @@
             }
             else if($_GET["error"] == "invalidemail"){
                 echo "<p>Choose a valid email!</p>";
+            }
+            else if($_GET["error"] == "invalidaccounttype"){
+                echo "<p>Put either student or teacher in the Account Type form!</p>";
             }
             else if($_GET["error"] == "passwordsdontmatch"){
                 echo "<p>Passwords don't match!</p>";
