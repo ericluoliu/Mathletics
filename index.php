@@ -85,6 +85,7 @@ include_once 'header.php';
                 </div>
             </div>
 
+
         </div>
     </div>
 </div>
@@ -92,8 +93,3 @@ include_once 'header.php';
 </body>
 
 </html>
-
-<script src="jquery.min.cs"> </script>
-<script src="ddtf.js"> </script>
-<script>
-    $('#catalog').ddTableFilter():

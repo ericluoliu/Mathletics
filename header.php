@@ -9,7 +9,7 @@ session_start();
 <div class="header">
     <a href='index.php'><img class="logo" src="static/Mathleticslogo.png" alt="Mathletics Logo"></a>
     <h1>Mathletics</h1>
-    <p>Very Legit Catchphrase</p>
+    <p>Very Legit Catchphrase 🐄</p>
 </div>
 <div class="topnav">
     <?php
@@ -31,29 +31,6 @@ session_start();
     <a href="index.php" style="float:left">Course Catalog</a>
     <a href="contactform.php" style="float:left">Contact Us</a>
 
-    <!-- OLD ONE, GRACE's VERS.
-    <nav>
-        <ul id="font">
-            <li><a href="index.php">Home</a></li>
-            <?php
-            /*if (isset($_SESSION["useruid"])) {
-                echo "<li><a href='profile.php'>Profile</a></li>";
-                echo "<li><a href='includes/logout.inc.php'>Logout</a></li>";
-            } else {
-                echo "<li><a href='signup.php'>Signup</a></li>";
-                echo "<li><a href='login.php'>Login</a></li>";
-            }*/
-            ?>
-            <li class="nav-item">
-                <a class="nav-link active" href="index.php">Course Catalog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contactform.php">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-        -->
-
 </div>
 <div class="horizontal-center">
     <div class="container">
@@ -70,5 +47,7 @@ session_start();
         </head>
     </div>
 </div>
+
+<button href="classcreateform.php" type="button" class="btn btn-outline-warning">Class Create</button>
 
 </html>
