@@ -59,6 +59,5 @@ session_start();
         </head>
     </div>
 </div>
-<button href="classcreateform.php" type="button" class="btn btn-outline-warning">Class Create</button>
 
 </html>
