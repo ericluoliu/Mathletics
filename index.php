@@ -83,6 +83,14 @@ include_once 'header.php';
                         </div>
                     </div>
                 </div>
+                <div class="column">
+                    <div class="container" style="width:100%">
+                        <img src="test-images/bungeegum.jpg" alt="Bungee Gum" class="resized-image">
+                        <div class="overlay">
+                            <div class="text">Bungee Gum</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

@@ -9,7 +9,6 @@
     <div class="fcf-body">
 
     <div id="fcf-form">
-    <h4 class="sent-notification"></h4>
     <h3 class="fcf-h3">Contact Us</h3>
 
     <form id="fcf-form-id" method="post" action="templates/sendEmail.php" class="fcf-form-class">
