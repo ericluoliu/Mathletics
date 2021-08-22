@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
 
     $txt = "Name: ".$name."\nEmail: ".$email."\nMessage: ".$message;
 // send email
-mail("themathleticspage@gmail.com","Contact Form Submission",$message);
+mail("themathleticspage@gmail.com","Contact Form Submission",$txt);
 
 echo "email should have sent";
 }

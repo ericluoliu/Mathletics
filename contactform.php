@@ -16,21 +16,21 @@
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Name: </label>
             <div class="fcf-input-group">
-                <input type="text" id="Name" class="fcf-form-control" required>
+                <input type="text" name="Name" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Email" class="fcf-label">E-mail address: </label>
             <div class="fcf-input-group">
-                <input type="email" id="Email" class="fcf-form-control" required>
+                <input type="email" name="Email" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label">Message:</label>
             <div class="fcf-input-group">
-                <textarea id="Message" class="fcf-form-control" rows="6" required></textarea>
+                <textarea name="Message" class="fcf-form-control" rows="6" required></textarea>
             </div>
         </div>
 

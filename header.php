@@ -59,5 +59,5 @@ session_start();
         </head>
     </div>
 </div>
-<a href="classcreateform.php" class="btn btn-lg " role="button">Class Create</a>
+
 </html>
