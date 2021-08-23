@@ -18,44 +18,67 @@
     <div class="fcf-body">
 
     <div id="fcf-form">
-    <h4 class="sent-notification"></h4>
     <h3 class="fcf-h3">Create a Course</h3>
-        <p>You will receive an email when your course is approved and added to the course catalog</p>
+    <br>
+    <p>You will receive an email when your course is approved and acced to the course catalog</p>
+    <br>
 
-    <form id="fcf-form-id" method="post" action="templates/sendEmail.php" class="fcf-form-class">
+    <form id="fcf-form-id" method="post" action="templates/newclassEmail.php" class="fcf-form-class">
         
         <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Course Name: </label>
+            <label for="ClassTitle" class="fcf-label">Class Title: </label>
             <div class="fcf-input-group">
-                <input type="text" id="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your e-mail address: </label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-        
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Course Price (Put 0 if it is free): </label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-        
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Type of Course (Math, Science, etc): </label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" class="fcf-form-control" required>
+                <input type="text" name="ClassTitle" class="fcf-form-control" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Course Description:</label>
+            <label for="TeacherEmail" class="fcf-label">Teacher's E-mail Address: </label>
             <div class="fcf-input-group">
-                <textarea id="Message" class="fcf-form-control" rows="6" required></textarea>
+                <input type="email" name="TeacherEmail" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Price" class="fcf-label">Price (Put 0 if it is free): </label>
+            <div class="fcf-input-group">
+                <input type="text" name="Price" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="MaxStudents" class="fcf-label">Maximum Number of Students: </label>
+            <div class="fcf-input-group">
+                <input type="text" name="MaxStudents" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group-" style="float:left;width:50%">
+            <label for="StartDate">Starting Date:</label>
+            <div class="fcf-input-group">
+                <input type="date" id="StartDate" name="StartDate" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group-right" style="float:right;width:50%">
+            <label for="EndDate">Ending Date:</label>
+            <div class="fcf-input-group">
+                <input type="date" id="EndDate" name="EndDate" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="fcf-form-group">
+            <label for="DayofWeek" class="fcf-label">Day of Week: </label>
+            <div class="fcf-input-group">
+                <input type="text" name="DayofWeek" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Time" class="fcf-label">Class Time in PST (beginning - end): </label>
+            <div class="fcf-input-group">
+                <input type="text" name="Time" class="fcf-form-control" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Description" class="fcf-label">Description (as specific as possible):</label>
+            <div class="fcf-input-group">
+                <textarea name="Description" class="fcf-form-control" rows="6" required></textarea>
             </div>
         </div>
 
