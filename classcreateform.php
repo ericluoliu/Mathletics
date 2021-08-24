@@ -11,7 +11,7 @@
     <div id="fcf-form">
     <h3 class="fcf-h3">Create a Course</h3>
     <br>
-    <p>You will receive an email when your course is approved and acced to the course catalog</p>
+    <p>You will receive an email when your course is approved and added to the course catalog</p>
     <br>
 
     <form id="fcf-form-id" method="post" action="templates/newclassEmail.php" class="fcf-form-class">
